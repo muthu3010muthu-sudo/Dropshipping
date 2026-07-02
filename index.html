@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Dropshipping Store | Mech DesignHub</title>
+<meta name="description" content="Shop 150+ curated products across 12 categories. Build your order sheet, download a PDF, and confirm via Instagram DM.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232F5CFF%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22sans-serif%22 fill=%22white%22 text-anchor=%22middle%22 font-weight=%22bold%22>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="page-loader"><div class="loader-mark"><div class="loader-ring"></div><span>Mech DesignHub</span></div></div>
+<div id="scroll-progress"></div>
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><i class="fa-solid fa-cube"></i></span>
+      <span>Mech DesignHub<small>Engineered Essentials</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search products, brands, categories..." aria-label="Search products">
+      <button type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div class="search-suggest"></div>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openWishlistPanel()" aria-label="Wishlist" style="position:relative;">
+        <i class="fa-regular fa-heart"></i>
+        <span id="wishlist-count" class="badge-count" style="display:none;">0</span>
+      </button>
+      <a class="icon-btn" href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" aria-label="Order on Instagram" style="color:#dd2a7b;border-color:#f6c6dd;">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <button class="nav-burger" id="nav-burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="brand" style="margin-bottom:22px;">
+    <span class="brand-mark"><i class="fa-solid fa-cube"></i></span>
+    <span>Mech DesignHub<small>Engineered Essentials</small></span>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="categories.html">Categories</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="faq.html">FAQ</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms &amp; Conditions</a>
+  <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" style="color:#dd2a7b;font-weight:700;">
+    <i class="fa-brands fa-instagram"></i>&nbsp; Order on Instagram
+  </a>
+</div>
+
+<section class="hero">
+  <div class="hero-shape s1"></div>
+  <div class="hero-shape s2"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Manually Verified Orders · Est. mech_designhub</div>
+      <h1 class="hero-title">Everyday essentials,<br><span class="accent">engineered</span> for value.</h1>
+      <p class="hero-desc">Browse a curated catalog of 150+ products across 12 categories. Build your order sheet in seconds, download a professional PDF, and confirm directly with our team over Instagram — no accounts, no online payment.</p>
+      <div class="hero-cta">
+        <a href="products.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
+        <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" class="btn btn-ig"><i class="fa-brands fa-instagram"></i> Order on Instagram</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b data-count="156">0</b><span>Demo Products</span></div>
+        <div class="hero-stat"><b data-count="12">0</b><span>Categories</span></div>
+        <div class="hero-stat"><b data-count="5200">0</b><span>Orders Fulfilled</span></div>
+        <div class="hero-stat"><b data-count="47" id="rating-stat">0</b><span>Avg. Rating ×10</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <img src="https://placehold.co/900x900/2F5CFF/FFFFFF?font=poppins&text=Mech+DesignHub" alt="Featured product collage">
+        <span class="corner-bracket tl"></span>
+        <span class="corner-bracket br"></span>
+      </div>
+      <div class="float-card glass-card fc1"><div class="fc-title"><i class="fa-solid fa-truck-fast" style="color:var(--blue-600);"></i>&nbsp; Free Delivery</div><div class="fc-sub">On all prepaid-verified orders</div></div>
+      <div class="float-card glass-card fc2"><div class="fc-title"><i class="fa-solid fa-shield-check" style="color:var(--green);"></i>&nbsp; Manually Verified</div><div class="fc-sub">Every order confirmed via DM</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>VOLTRIX</span><span>NORDLY</span><span>ATHLEX</span><span>HEARTHLY</span><span>URBANWEAR</span><span>KRYONIX</span><span>GLOWVANA</span><span>WOODURA</span><span>DRIVEON</span><span>PAWSOME</span>
+    <span>VOLTRIX</span><span>NORDLY</span><span>ATHLEX</span><span>HEARTHLY</span><span>URBANWEAR</span><span>KRYONIX</span><span>GLOWVANA</span><span>WOODURA</span><span>DRIVEON</span><span>PAWSOME</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Browse</div>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-sub">Twelve carefully organized departments, from electronics to pet supplies.</p>
+      </div>
+      <a href="categories.html" class="link-more">View all categories <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-grid" id="home-categories"></div>
+  </div>
+</section>
+
+<section class="section-tight" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Handpicked</div><h2 class="section-title">Featured Products</h2></div>
+      <a href="products.html" class="link-more">Shop all <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="product-grid" id="featured-products"></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Right Now</div><h2 class="section-title">Trending Products</h2></div>
+      <a href="products.html" class="link-more">Shop all <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="product-grid" id="trending-products"></div>
+  </div>
+</section>
+
+<section class="section-tight" style="background:#fff;">
+  <div class="container">
+    <div class="deal-strip">
+      <div class="dl-left">
+        <div class="eyebrow" style="color:#ffd08a;">Limited Time</div>
+        <h3>Flash Deals — up to 50% off</h3>
+        <p>Prices refresh daily. Grab them before the clock resets.</p>
+      </div>
+      <div class="countdown" id="flash-countdown">
+        <div class="cd-box"><b class="cd-h">00</b><span>Hours</span></div>
+        <div class="cd-box"><b class="cd-m">00</b><span>Mins</span></div>
+        <div class="cd-box"><b class="cd-s">00</b><span>Secs</span></div>
+      </div>
+    </div>
+    <div class="product-grid" id="flash-deals"></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Fan Favorites</div><h2 class="section-title">Best Sellers</h2></div>
+      <a href="products.html" class="link-more">Shop all <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="product-grid" id="bestseller-products"></div>
+  </div>
+</section>
+
+<section class="section-tight" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Just Landed</div><h2 class="section-title">New Arrivals</h2></div>
+      <a href="products.html" class="link-more">Shop all <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="product-grid" id="newarrival-products"></div>
+  </div>
+</section>
+
+<section class="section" id="how-to-order">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Simple &amp; Transparent</div><h2 class="section-title">How to Order</h2><p class="section-sub">No accounts, no online payment. Just eight quick steps to a confirmed order.</p></div>
+    </div>
+    <div class="timeline" data-aos="fade-up">
+      <div class="tl-step"><div class="tl-num">1</div><h4>Browse Products</h4><p>Explore 150+ items across 12 categories.</p></div>
+      <div class="tl-step"><div class="tl-num">2</div><h4>Open Details</h4><p>Check specs, reviews and pricing.</p></div>
+      <div class="tl-step"><div class="tl-num">3</div><h4>Click Buy Now</h4><p>Start your order sheet instantly.</p></div>
+      <div class="tl-step"><div class="tl-num">4</div><h4>Fill Delivery Info</h4><p>Enter your address and contact details.</p></div>
+    </div>
+    <div class="timeline" style="margin-top:26px;" data-aos="fade-up">
+      <div class="tl-step"><div class="tl-num">5</div><h4>Generate PDF</h4><p>Download your professional order sheet.</p></div>
+      <div class="tl-step"><div class="tl-num">6</div><h4>Send via Instagram</h4><p>DM the PDF to @mech_designhub.</p></div>
+      <div class="tl-step"><div class="tl-num">7</div><h4>We Verify</h4><p>Our team checks and confirms your order.</p></div>
+      <div class="tl-step"><div class="tl-num">8</div><h4>Get Updates</h4><p>Receive confirmation and shipping status.</p></div>
+    </div>
+    <div class="text-center" style="margin-top:32px;">
+      <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" class="btn btn-ig"><i class="fa-brands fa-instagram"></i> Order on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Reviews</div><h2 class="section-title">What Customers Say</h2></div>
+    </div>
+    <div class="swiper testi-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper" style="padding-bottom:6px;">
+        <div class="swiper-slide"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Ordered a pair of earbuds — the PDF process was so easy and the team confirmed on Instagram within an hour."</p><div class="testi-person"><div class="testi-avatar">R</div><div><b>Riya Mehta</b><span>Mumbai</span></div></div></div></div>
+        <div class="swiper-slide"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Loved that there was no signup needed. Filled the form, sent the PDF, done. Product quality was great too."</p><div class="testi-person"><div class="testi-avatar">A</div><div><b>Aman Verma</b><span>Delhi</span></div></div></div></div>
+        <div class="swiper-slide"><div class="testi-card"><div class="testi-stars">★★★★☆</div><p class="testi-text">"Good prices and the order sheet PDF looked genuinely professional. Delivery took a day longer than expected."</p><div class="testi-person"><div class="testi-avatar">S</div><div><b>Sana Iqbal</b><span>Bengaluru</span></div></div></div></div>
+        <div class="swiper-slide"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Ordered furniture for my study, the specs table on the product page made the decision easy."</p><div class="testi-person"><div class="testi-avatar">K</div><div><b>Karan Shah</b><span>Pune</span></div></div></div></div>
+        <div class="swiper-slide"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Their Instagram team replied fast and kept me updated until delivery. Will shop again."</p><div class="testi-person"><div class="testi-avatar">P</div><div><b>Priyanka Nair</b><span>Kochi</span></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="newsletter-band" data-aos="zoom-in">
+      <div class="eyebrow" style="justify-content:center;">Stay Updated</div>
+      <h2 class="section-title">Get early access to new drops &amp; deals</h2>
+      <p class="section-sub" style="margin:0 auto;">No spam — just fresh arrivals and flash-deal alerts.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0;">
+  <div class="container">
+    <div class="ig-band" data-aos="fade-up">
+      <div>
+        <h3><i class="fa-brands fa-instagram"></i> Prefer to order on Instagram?</h3>
+        <p>Message us your favorite product screenshots any time — our team replies during business hours to help you check out manually.</p>
+      </div>
+      <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" class="btn" style="background:#fff;color:#dd2a7b;"><i class="fa-brands fa-instagram"></i> @mech_designhub</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-cube"></i></span>
+          <span>Mech DesignHub<small style="color:rgba(255,255,255,.5);">Engineered Essentials</small></span>
+        </a>
+        <p>A frontend-only dropshipping storefront. Browse, build your order sheet, and confirm manually with our team over Instagram DM — simple, transparent, no online payment required.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Help &amp; Info</h5>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="contact.html">Shipping &amp; Returns</a>
+        <a href="index.html#how-to-order">How to Order</a>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Get In Touch</h5>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" style="padding:0;">@mech_designhub</a></li>
+          <li><i class="fa-solid fa-envelope"></i><span>orders.mechdesignhub@gmail.com</span></li>
+          <li><i class="fa-solid fa-clock"></i><span>Mon–Sat, 10 AM – 7 PM IST</span></li>
+        </ul>
+        <a href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" class="btn btn-ig btn-sm" style="margin-top:10px;"><i class="fa-brands fa-instagram"></i> Order on Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="cur-year"></span> Mech DesignHub. All rights reserved.</span>
+      <span>Demo storefront · Frontend-only · Manual order confirmation via Instagram DM</span>
+    </div>
+  </div>
+</footer>
+<div id="toast-container"></div>
+<button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<a id="float-ig" href="https://www.instagram.com/mech_designhub/" target="_blank" rel="noopener" aria-label="Order on Instagram" class="show"><i class="fa-brands fa-instagram"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/render.js"></script>
+<script src="js/order-form.js"></script>
+<script src="js/pdf-generator.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.Swiper) {
+      new Swiper('.testi-swiper', {
+        slidesPerView: 1.05,
+        spaceBetween: 20,
+        breakpoints: { 700: { slidesPerView: 2, spaceBetween: 22 }, 1080: { slidesPerView: 3, spaceBetween: 24 } },
+        autoplay: { delay: 3800, disableOnInteraction: false },
+        loop: true,
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
